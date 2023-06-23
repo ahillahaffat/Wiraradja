@@ -1,0 +1,119 @@
+/* CSS Form Tiket */
+#ticket {
+  padding: 60px 0;
+}
+
+#ticket h1 {
+  margin-bottom: 40px;
+}
+
+#ticket form {
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 40px;
+}
+
+#ticket .form-group {
+  margin-bottom: 20px;
+}
+
+#ticket label {
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+  background-color: #e6e6e6;
+}
+
+.select-icon {
+  position: relative;
+}
+
+.select-icon::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Animasi Box Shadows dan Rotasi */
+@keyframes rotateShadow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.846);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(19, 237, 175);
+  }
+  100% {
+    box-shadow: 0 0 10px rgb(7, 204, 239);
+  }
+}
+
+#ticket form {
+  animation: rotateShadow 2s infinite;
+}
+
+/* Ornament pada Border Box */
+#ticket::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  border: 4px solid #d8d8d8;
+  border-radius: 8px;
+}
+.vector-container-dua {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .vector-image2 {
+    max-width: 40%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .vector-container-dua:hover .vector-image2 {
+    transform: scale(1.1);
+  }
+  .container h1 {
+    font-family: "catilde", sans-serif; /* Ganti "Arial" dengan font yang diinginkan */
+    padding-top: 30px;
+  }
+  
+  
